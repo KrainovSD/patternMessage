@@ -180,6 +180,8 @@ body {
   border: 3px solid black;
   padding: 10px;
   font-size: 1.14286rem;
+  height: 10.71429rem;
+  resize: none;
 }
 
 .editor__storageTools {
@@ -189,4 +191,29 @@ body {
   width: 100%;
   border-top: 1px solid #cfcfcf;
   border-bottom: 0.5px solid #cfcfcf;
+  padding: 10px 0;
+  margin: 5px 0 10px 0;
+}
+
+.editor__storageLoadButton {
+  padding: 8px;
+  background-color: #6363f7;
+  color: white;
+}
+
+.editor__storageSaveButton {
+  margin-left: 10px;
+  padding: 8px;
+  background-color: #6363f7;
+  color: white;
+}
+
+.editor__patternField {
+  width: 90%;
+  border: 1px solid #b9b9b9;
+  padding: 10px;
+  font-size: 1.14286rem;
+  height: 10.71429rem;
+  resize: none;
+  cursor: default;
 }
