@@ -1,0 +1,101 @@
+@import "_custom.scss";
+
+
+@function rem($px) {
+    $result : $px/14;
+    @return $result+rem
+}
+
+;
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.workplace {
+    margin: 0px auto 0px auto;
+    max-width: rem(1200);
+    width: 100%;
+    padding: rem(20);
+    display: flex;
+}
+
+.userInfo {
+    background-color: #f1f1f1;
+    width: 20%;
+    padding: 20px 0px 10px 10px;
+    border: 1px solid #cfcfcf;
+
+    & h1 {
+        font-weight: 600;
+        font-size: rem(16);
+        margin-bottom: rem(-7);
+        margin-left: rem(7);
+    }
+
+    &_inputInfo {
+        border: 1px solid #cfcfcf;
+        width: 100%;
+        line-height: rem(30);
+        font-size: rem(16);
+        margin-top: 3px;
+    }
+
+    &__container {
+        border: 1px solid #cfcfcf;
+        padding: 10px;
+
+    }
+
+    &__loadButton {
+        width: 100%;
+        height: rem(50);
+        background-color: #a3a2a2;
+    }
+
+    &__title {
+        margin-top: 10px;
+    }
+}
+
+.editor {
+    width: 80%;
+    padding: 0px 20px;
+
+    &__tokensList {
+        display: flex;
+    }
+
+    &__titleTokensList {
+        margin: auto 0px;
+    }
+
+    &__token {
+        margin-left: 10px;
+        padding: 7px;
+        background-color: green;
+        color: white
+    }
+
+    &__editField {
+        margin-top: 10px;
+        width: 90%;
+        border: 3px solid black;
+        padding: 10px;
+        font-size: rem(16);
+    }
+
+    &__storageTools {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid #cfcfcf;
+        border-bottom: 0.5px solid #cfcfcf;
+    }
+
+    &__storageLoadButton {}
+
+    &__storageSaveButton {}
+
+    &__patternField {}
+}
